@@ -39,14 +39,12 @@ def sort_files(source_directory, target_directory):
 
 
 def main():
-    # Get user input
+    
     source_directory = input("Enter source directory: ")
     target_directory = input("Enter target directory: ")
 
-    # Create target directories if they don't exist
     create_folders(target_directory)
 
-    # Sort and move files
     sort_files(source_directory, target_directory)
 
     print("File organization completed!")
